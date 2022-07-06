@@ -6,12 +6,14 @@ import Dashboard from "../pages/dashboard";
 import Title from "../components/title";
 import Categories from "../pages/categories";
 import Todos from "../pages/todos";
+import Home from "../pages/home";
 
 const IndexRoutes = () => {
   return (
     <React.Fragment>
       <Router>
         <Routes>
+          <Route path="" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<SignIn />} />
           <Route path="/dashboard/" element={<Dashboard />}>
