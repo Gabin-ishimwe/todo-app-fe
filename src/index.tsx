@@ -22,7 +22,7 @@ const authLink = setContext((_, { headers }) => {
 });
 
 const httpLink = createHttpLink({
-  uri: "https://todo-api-nexus.herokuapp.com",
+  uri: "https://todo-api-nexus-production.up.railway.app",
 });
 
 const client = new ApolloClient({
