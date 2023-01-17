@@ -22,7 +22,7 @@ const authLink = setContext((_, { headers }) => {
 });
 
 const httpLink = createHttpLink({
-  uri: "https://todo-api-nexus-production.up.railway.app",
+  uri: "https://todo-api-nexus-production.up.railway.app/graphql",
 });
 
 const client = new ApolloClient({
